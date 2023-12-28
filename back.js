@@ -1,18 +1,21 @@
-// Seu arquivo back.js
 
-// Função para pegar os valores dos checkboxes
 function pegarValores() {
     var cadeiras = document.getElementsByName("cadeira");
     var cadeirasOcupadas = [];
+    var cad = document.getElementById("valores")
+    var result = 0
+    var valor = 35
 
     for (var i = 0; i < cadeiras.length; i++) {
         if (cadeiras[i].checked) {
             cadeirasOcupadas.push(cadeiras[i].value);
+            cad.innerText = "Suas poltoras " + cadeirasOcupadas
         }
     }
-
-    console.log(cadeirasOcupadas);
+    result = cadeirasOcupadas.length * valor
+    cad.innerHTML += "<br>" +  fomatDinheiro(result)
 }
+
 
 // Função a ser executada quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
@@ -20,5 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
     var checkboxes = document.querySelectorAll('.opcao');
     checkboxes.forEach(function(checkbox) {
         checkbox.addEventListener('change', pegarValores);
+    
     });
 });
+
+function fomatDinheiro(valor){
+    // Formatação padrão para o local atual do usuário
+    const formatoPadrao = valor.toLocaleString();
+    
+    // Formatação para o local do usuário, com opções específicas para moeda
+    const formatoMoeda = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    
+    return formatoMoeda
+}
+

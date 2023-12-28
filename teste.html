@@ -39,71 +39,50 @@
                         <li><input type="checkbox" name="cadeira" value="4A" class="opcao"> 4A</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" value="5A" class="op5"> 5A</li>
-                        <li><input type="checkbox" name="cadeira" value="6A" class="op6"> 6A</li>
+                        <li><input type="checkbox" name="cadeira" value="5A" class="opcao"> 5A</li>
+                        <li><input type="checkbox" name="cadeira" value="6A" class="opcao"> 6A</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" value="7A" class="op"> 7A</li>
-                        <li><input type="checkbox" name="cadeira" value="8A" class="op"> 8A</li>
+                        <li><input type="checkbox" name="cadeira" value="7A" class="opcao"> 7A</li>
+                        <li><input type="checkbox" name="cadeira" value="8A" class="opcao"> 8A</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" value="9A" class="op"> 9A</li>
-                        <li><input type="checkbox" name="cadeira" value="10A" class="op"> 10A</li>
+                        <li><input type="checkbox" name="cadeira" value="9A" class="opcao"> 9A</li>
+                        <li><input type="checkbox" name="cadeira" value="10A" class="opcao"> 10A</li>
                     </ul>
                 </div>
                 <div id="lugares-baixo">
                     <ul>
-                        <li><input type="checkbox" name="cadeira" value="1B" class="op"> 1B</li>
-                        <li><input type="checkbox" name="cadeira" value="2B" class="op"> 2B</li>
+                        <li><input type="checkbox" name="cadeira" value="1B" class="opcao"> 1B</li>
+                        <li><input type="checkbox" name="cadeira" value="2B" class="opcao"> 2B</li>
                         
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" value="3B" class="op"> 3B</li>
-                        <li><input type="checkbox" name="cadeira" value="4B" class="op"> 4B</li>
+                        <li><input type="checkbox" name="cadeira" value="3B" class="opcao"> 3B</li>
+                        <li><input type="checkbox" name="cadeira" value="4B" class="opcao"> 4B</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" value="5B" class="op"> 5B</li>
-                        <li><input type="checkbox" name="cadeira" value="6B" class="op"> 6B</li>
+                        <li><input type="checkbox" name="cadeira" value="5B" class="opcao"> 5B</li>
+                        <li><input type="checkbox" name="cadeira" value="6B" class="opcao"> 6B</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" value="7B" class="op"> 7B</li>
-                        <li><input type="checkbox" name="cadeira" value="8B" class="op"> 8B</li>
+                        <li><input type="checkbox" name="cadeira" value="7B" class="opcao"> 7B</li>
+                        <li><input type="checkbox" name="cadeira" value="8B" class="opcao"> 8B</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" value="9B" class="op"> 9B</li>
-                        <li><input type="checkbox" name="cadeira" value="10B" class="op"> 10B</li>
+                        <li><input type="checkbox" name="cadeira" value="9B" class="opcao"> 9B</li>
+                        <li><input type="checkbox" name="cadeira" value="10B" class="opcao"> 10B</li>
                     </ul>
                 </div>
             </div>
         </div>
         <section>
-            <h3>Sessao 1</h3>
+            <p id="valores"></p>
         </section>
     </main>
 
     <footer class="rodape">
         <p>Rodapé</p>
     </footer>
-    <script>
-        function pegarValores() {
-    var cadeiras = document.getElementsByName("cadeira");
-    var cadeirasOcupadas = [];
-
-    for (var i = 0; i < cadeiras.length; i++) {
-        if (cadeiras[i].checked) {
-            cadeirasOcupadas.push(cadeiras[i].value);
-        }
-    }
-
-    console.log(cadeirasOcupadas);
-}
-
-// Adicionando um event listener para cada checkbox com a classe "opcao"
-var checkboxes = document.querySelectorAll('.opcao');
-checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', pegarValores);
-});
-
-    </script>
 </body>
 </html>

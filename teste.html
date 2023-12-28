@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="back.js"></script>
+    
     <header class="barra-menu">
         <h1>KlingerTur</h1>
         <nav>
@@ -29,47 +31,47 @@
             <div id="lugares">
                 <div id="lugares-cima">
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="1A"> 1A</li>
-                        <li><input type="checkbox" name="cadeira" id="2A"> 2A</li>
+                        <li><input type="checkbox" name="cadeira" value="1A" class="opcao"> 1A</li>
+                        <li><input type="checkbox" name="cadeira" value="2A" class="opcao"> 2A</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="3A"> 3A</li>
-                        <li><input type="checkbox" name="cadeira" id="4A"> 4A</li>
+                        <li><input type="checkbox" name="cadeira" value="3A" class="opcao"> 3A</li>
+                        <li><input type="checkbox" name="cadeira" value="4A" class="opcao"> 4A</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="5A"> 5A</li>
-                        <li><input type="checkbox" name="cadeira" id="6A"> 6A</li>
+                        <li><input type="checkbox" name="cadeira" value="5A" class="op5"> 5A</li>
+                        <li><input type="checkbox" name="cadeira" value="6A" class="op6"> 6A</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="7A"> 7A</li>
-                        <li><input type="checkbox" name="cadeira" id="8A"> 8A</li>
+                        <li><input type="checkbox" name="cadeira" value="7A" class="op"> 7A</li>
+                        <li><input type="checkbox" name="cadeira" value="8A" class="op"> 8A</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="9A"> 9A</li>
-                        <li><input type="checkbox" name="cadeira" id="10A"> 10A</li>
+                        <li><input type="checkbox" name="cadeira" value="9A" class="op"> 9A</li>
+                        <li><input type="checkbox" name="cadeira" value="10A" class="op"> 10A</li>
                     </ul>
                 </div>
                 <div id="lugares-baixo">
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="1B"> 1B</li>
-                        <li><input type="checkbox" name="cadeira" id="2B"> 2B</li>
+                        <li><input type="checkbox" name="cadeira" value="1B" class="op"> 1B</li>
+                        <li><input type="checkbox" name="cadeira" value="2B" class="op"> 2B</li>
                         
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="3B"> 3B</li>
-                        <li><input type="checkbox" name="cadeira" id="4B"> 4B</li>
+                        <li><input type="checkbox" name="cadeira" value="3B" class="op"> 3B</li>
+                        <li><input type="checkbox" name="cadeira" value="4B" class="op"> 4B</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="5B"> 5B</li>
-                        <li><input type="checkbox" name="cadeira" id="6B"> 6B</li>
+                        <li><input type="checkbox" name="cadeira" value="5B" class="op"> 5B</li>
+                        <li><input type="checkbox" name="cadeira" value="6B" class="op"> 6B</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="7B"> 7B</li>
-                        <li><input type="checkbox" name="cadeira" id="8B"> 8B</li>
+                        <li><input type="checkbox" name="cadeira" value="7B" class="op"> 7B</li>
+                        <li><input type="checkbox" name="cadeira" value="8B" class="op"> 8B</li>
                     </ul>
                     <ul>
-                        <li><input type="checkbox" name="cadeira" id="9B"> 9B</li>
-                        <li><input type="checkbox" name="cadeira" id="10B"> 10B</li>
+                        <li><input type="checkbox" name="cadeira" value="9B" class="op"> 9B</li>
+                        <li><input type="checkbox" name="cadeira" value="10B" class="op"> 10B</li>
                     </ul>
                 </div>
             </div>
@@ -82,6 +84,26 @@
     <footer class="rodape">
         <p>Rodapé</p>
     </footer>
-    
+    <script>
+        function pegarValores() {
+    var cadeiras = document.getElementsByName("cadeira");
+    var cadeirasOcupadas = [];
+
+    for (var i = 0; i < cadeiras.length; i++) {
+        if (cadeiras[i].checked) {
+            cadeirasOcupadas.push(cadeiras[i].value);
+        }
+    }
+
+    console.log(cadeirasOcupadas);
+}
+
+// Adicionando um event listener para cada checkbox com a classe "opcao"
+var checkboxes = document.querySelectorAll('.opcao');
+checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', pegarValores);
+});
+
+    </script>
 </body>
 </html>

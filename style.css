@@ -54,10 +54,36 @@ main{
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
+    padding: 20px;
     background-color: rgba(34, 49, 63, 0.712);
+    
+}
+
+#local{
+    margin-top: 10px;
+    display: flex;
+    background-color: #bbd1ee;
+    color: black;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#trocar{
+    margin: 0 20px;
+    transform: scale(2);
+    max-width: fit-content;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+#trocar:hover{
+    transform: scale(2) rotate(180deg);
+    transition: 0.5s;
 }
 #onibus{
-    background-color: aliceblue;
+    background-color: #bbd1ee;
     max-width: 620px;
     /* margin: 0 30%; */
     padding: 10px;
@@ -73,7 +99,7 @@ main{
     padding: 0;
 }
 #lugares-cima, #lugares-baixo {
-    background-color: rgb(147, 212, 212);
+    background-color: rgb(113, 160, 160);
     display: flex;
 
 }
@@ -102,7 +128,8 @@ li {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
+    margin-top: 200px;
     bottom: 0;
     width: 100%;
 }

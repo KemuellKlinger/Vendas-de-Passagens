@@ -7,9 +7,11 @@ function pegarValores() {
     var valor = 35
 
     for (var i = 0; i < cadeiras.length; i++) {
-        if (cadeiras[i].checked) {
+        if (cadeiras[i].checked && cadeirasOcupadas) {
             cadeirasOcupadas.push(cadeiras[i].value);
-            cad.innerText = "Suas poltoras " + cadeirasOcupadas
+            cad.innerText = "Suas poltoras:  " + cadeirasOcupadas
+        }else{
+            cad.innerText = "Suas poltoras: " + cadeirasOcupadas
         }
     }
     result = cadeirasOcupadas.length * valor
@@ -23,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var checkboxes = document.querySelectorAll('.opcao');
     checkboxes.forEach(function(checkbox) {
         checkbox.addEventListener('change', pegarValores);
-    
     });
 });
 
@@ -37,3 +38,13 @@ function fomatDinheiro(valor){
     return formatoMoeda
 }
 
+function inverterLocal() {
+    var partida = document.getElementById("partida");
+    var chegada = document.getElementById("chegada");
+
+    console.log("chegada " + chegada.value, "partida " + partida.value);
+
+    var temp = partida.value;
+    partida.value = chegada.value;
+    chegada.value = temp;
+}

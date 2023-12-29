@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/pexels-rdne-stock-project-8553100.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+}
+
+.box-center{
+    background-color: rgba(180, 64, 190, 0.768);
+    backdrop-filter: blur(5px);
+    color: white;
+    display: flex;
+    border-radius: 20px;
+    min-width: 40%;
+    max-width: auto;
+}
+
+#login{
+    border-right: solid 1px rgb(255, 255, 255);
+    width: 60%;
+}
+
+#cadastro{
+    width: 40%;
+}
+.box-loginCad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.input-style {
+    padding: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: min-content;
+    border-radius: 10px;
+    border: none;
+}
+.botao{
+    padding: 2px 7px;
+    background-color: rgba(2, 93, 220, 0.824);
+    color: white;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.botao:hover{
+    transition: 0.3s;
+    background-color: rgba(0, 65, 157, 0.824);
+}
+
+#icon{
+    margin-top: 4.5%;
+    left: 15%;
+    position: absolute;  
+    padding: 2px 0;
+    padding-right: 8px;
+    color: #083a35;
+    border-right: 1px solid #00dfc4;
+}

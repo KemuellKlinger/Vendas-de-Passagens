@@ -55,8 +55,7 @@ main{
     margin-top: 150px;
     margin-bottom: 50px;
     padding: 20px;
-    background-color: rgba(34, 49, 63, 0.712);
-    
+    background-color: rgba(34, 49, 63, 0.712);   
 }
 
 #local{
@@ -85,7 +84,6 @@ main{
 #onibus{
     background-color: #bbd1ee;
     max-width: 620px;
-    /* margin: 0 30%; */
     padding: 10px;
     border-radius: 10px;
     display: flex;

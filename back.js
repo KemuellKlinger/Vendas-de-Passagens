@@ -1,4 +1,3 @@
-
 function pegarValores() {
     var cadeiras = document.getElementsByName("cadeira");
     var cadeirasOcupadas = [];
@@ -17,7 +16,6 @@ function pegarValores() {
     result = cadeirasOcupadas.length * valor
     cad.innerHTML += "<br>" +  fomatDinheiro(result)
 }
-
 
 // Função a ser executada quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {

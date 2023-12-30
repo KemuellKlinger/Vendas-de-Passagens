@@ -35,11 +35,13 @@ O objetivo principal deste projeto é desenvolver um site intuitivo e eficiente 
 
 5. Commit e faça push para o seu repositório forkado.
 
-    git add .
-    git commit -m "Descrição das alterações" 
-    git push origin nome-da-sua-branch
+   git add .
 
-6. Crie um pull request para enviar suas alterações.
+   git commit -m "Descrição das alterações"
+   
+   git push origin nome-da-sua-branch
+
+7. Crie um pull request para enviar suas alterações.
 
 ## Autores
 Kemuell Klinger (@kemuell411), Naum Diniz (@NaumDiniz) e João Victor (@joaosaiko)

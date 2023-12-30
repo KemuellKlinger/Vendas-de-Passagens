@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <main class="box-center">
         <form action="#" method="post" id="login" class="box-loginCad">
             <h1>Login</h1>
             <div class="inputBox">
-                <label for="email">E-mail</label><br>
-                <input type="text" name="email" id="email" class="input-style">
-                <i id="icon" class="fa-regular fa-user"></i>
-                
+                <input type="email" name="email" id="email" class="input-style">
+                <label class="label-style" for="email">E-mail</label>
             </div>
-           <div class="inputBox">
-            <label for="senha">Senha</label><br>
+
+            <div class="inputBox">
                 <input type="password" name="senha" id="senha" class="input-style">
-                <i id="icon" class="fa-solid fa-lock"></i>    
-                
-           </div>
+                <label class="label-style" for="senha">Senha</label>
+            </div>
+
+
             <a class="botao" href="../compra/compra.html">Login</a>
         </form>
-        <form action="#" method="post" id="cadastro" class="box-loginCad"> 
+        <form action="#" method="post" id="cadastro" class="box-loginCad">
             <h1>Bem vindo</h1>
             <h2>Novo Login</h2>
             <button class="botao">Criar conta</button>
         </form>
-        <!-- <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" class="input-style">
-
-        <label for="Sobrenome">Sobrenome</label>
-        <input type="text" name="sobrenome" id="sobrenome" class="input-style">
-
-        <label for="CadEmail">E-mail</label>
-        <input type="text" name="CadEmail" id="CadEmail" class="input-style">
-
-        <label for="CadSenha">Senha</label>
-        <input type="password" name="CadSenha" id="CadSenha" class="input-style"> -->
-     
     </main>
 </body>
+
 </html>

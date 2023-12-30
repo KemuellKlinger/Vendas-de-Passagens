@@ -44,3 +44,7 @@ function inverterLocal() {
     partida.value = chegada.value;
     chegada.value = temp;
 }
+
+
+
+

@@ -44,13 +44,15 @@ body{
 }
 
 .input-style {
-    padding: 4px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    height: min-content;
-    border-radius: 10px;
-    border: none;
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 1.2em;
+    margin-top: 17px;
 }
 .botao{
     padding: 2px 7px;
@@ -75,4 +77,58 @@ body{
     padding-right: 8px;
     color: #083a35;
     border-right: 1px solid #00dfc4;
+}
+
+/* 
+#sobsob1, #sobsob2{
+    position: absolute;
+    left: 30px;
+    bottom: 67px;
+    color:rgba(255, 255, 255, 0.37);
+    transition: 0.4s;
+    cursor: text;
+}
+
+#sobsob1{
+    margin-bottom: 50px;
+}
+.input-style:focus ~ label,
+.input-style:not(:placeholder-shown) ~ label,
+.input-style:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.37);
+} */
+
+.inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-style {
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 1.2em;
+    margin-top: 7px;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+.label-style {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.37);
+    transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.label-float {
+    transform: translateY(-24px);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.37);
 }

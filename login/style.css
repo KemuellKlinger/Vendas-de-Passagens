@@ -35,6 +35,7 @@ body{
 #cadastro{
     width: 40%;
 }
+
 .box-loginCad{
     display: flex;
     flex-direction: column;

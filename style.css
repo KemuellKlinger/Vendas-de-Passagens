@@ -1,20 +1,19 @@
-body{
-    font: normal 14pt Arial;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url(img/image-18.jpg);
+    background-color: black;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    
 }
 
-.barra-menu{
+.barra-menu {
     background-color: rgba(146, 161, 130, 0.349);
     backdrop-filter: blur(6px);
     position: fixed;
@@ -22,23 +21,26 @@ body{
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    z-index: 1000
 }
-#lista{
-    list-style-type: none; /* Remover marcadores de lista padrão */
+
+#lista {
+    list-style-type: none;
     padding: 0;
     margin-top: 45px;
 }
 
 nav li {
-    display: inline; 
-    margin-right: 25px; 
+    display: inline;
+    margin-right: 25px;
 }
+
 ul a {
     text-decoration: none;
     color: white;
 }
 
-.barra-menu > h1{
+.barra-menu>h1 {
     font-size: 50px;
     padding: 0;
     margin: 20px 100px 10px;
@@ -46,29 +48,62 @@ ul a {
     color: #ffffff;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 97px;
     margin-bottom: 50px;
     padding: 20px;
-    background-color: rgba(34, 49, 63, 0.712);   
+    background: url(img/image-18.jpg) center/cover no-repeat fixed;
 }
 
-#local{
-    margin-top: 10px;
-    display: flex;
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 80%);
+}
+
+#local {
+    z-index: 50;
+    display: flow-root;
+    min-width: fit-content;
+    text-align: justify;
+    margin: 0 15%;
     background-color: #bbd1ee;
     color: black;
-    padding: 20px;
+    padding: 10px;
     border-radius: 7px;
 }
 
-#trocar{
-    margin: 0 20px;
+#partida {
+    margin-left: 20px;
+}
+
+#local input[type="text"],
+input[type="date"] {
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+
+}
+
+#local input[type="text"],
+input[type="date"],
+label {
+    padding: 5px;
+}
+
+#trocar {
+    display: block;
+    margin: 0 45%;
+    padding: 10px;
     transform: scale(2);
     max-width: fit-content;
     background: transparent;
@@ -77,11 +112,14 @@ main{
     transition: 0.5s;
 
 }
-#trocar:hover{
+
+#trocar:hover {
     transform: scale(2) rotate(180deg);
     transition: 0.5s;
 }
-#onibus{
+
+#onibus {
+    z-index: 50;
     background-color: #bbd1ee;
     max-width: 620px;
     padding: 10px;
@@ -96,10 +134,11 @@ main{
     margin: 0;
     padding: 0;
 }
-#lugares-cima, #lugares-baixo {
+
+#lugares-cima,
+#lugares-baixo {
     background-color: rgb(113, 160, 160);
     display: flex;
-
 }
 
 #lugares-baixo {
@@ -110,7 +149,9 @@ li {
     list-style-type: none;
     padding: 5px;
 }
-
+#esc{
+    z-index: 100;
+}
 #motorista {
     background-color: #333;
     color: white;
@@ -120,9 +161,19 @@ li {
     margin-right: 10px;
 }
 
-.rodape{
-    background-color: #333333a9;
-    backdrop-filter: blur(3px);
+#result {
+    margin-top: 10px;
+    width: 30%;
+    height: 90px;
+    z-index: 100;
+    background-color: #BBD1EE;
+    color: black;
+    border-radius: 10px;
+}
+
+.rodape {
+    background-color: #333333f6;
+    /* backdrop-filter: blur(3px); */
     color: white;
     text-align: center;
     padding: 10px;
@@ -130,4 +181,12 @@ li {
     margin-top: 200px;
     bottom: 0;
     width: 100%;
+}
+
+#espaco{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+    height: 400px;
 }

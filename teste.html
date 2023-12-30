@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <script src="back.js"></script>
-    
+
     <header class="barra-menu">
         <h1>KlingerTur</h1>
         <nav>
             <ul id="lista">
-                <li><a href="#">algo</a></li>
-                <li><a href="#">algo</a></li>
-                <li><a href="#">algo</a></li>
-                <li><a href="#">algo</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">perfil</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
+
         <div id="local">
             <label for="partida">Partida</label>
-            <input type="text" id="partida" required placeholder="São Luis"> 
-            <button id="trocar" onclick="inverterLocal()">⇋</button>
+            <input type="text" id="partida" required placeholder="São Luis">
+            <input type="date" name="data" id="data">
+
+            <button id="trocar" onclick="inverterLocal()">⇅</button>
+
             <label for="chegada">Chegada</label>
             <input type="text" id="chegada" required placeholder="Icatu">
         </div>
-        <h2>Escolha sua poltrona</h2>
-       
+        <h2 id="esc">Escolha sua poltrona</h2>
         <div id="onibus">
             <div id="motorista">
                 <p>motorista</p>
@@ -62,7 +66,7 @@
                     <ul>
                         <li><input type="checkbox" name="cadeira" value="1B" class="opcao"> 1B</li>
                         <li><input type="checkbox" name="cadeira" value="2B" class="opcao"> 2B</li>
-                        
+
                     </ul>
                     <ul>
                         <li><input type="checkbox" name="cadeira" value="3B" class="opcao"> 3B</li>
@@ -83,13 +87,19 @@
                 </div>
             </div>
         </div>
-        <section>
-            <p id="valores">Selecione para continuar</p>
+        <div class="gradient-overlay"></div>
+        <section id="result">
+            <div>
+                <p id="valores">Selecione para continuar</p>
+            </div>
         </section>
     </main>
-
+    <section id="espaco">
+        <h1>Espaco</h1>
+    </section>
     <footer class="rodape">
         <p>Rodapé</p>
     </footer>
 </body>
+
 </html>

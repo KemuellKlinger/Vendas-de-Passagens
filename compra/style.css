@@ -14,7 +14,7 @@ body {
 }
 
 .barra-menu {
-    background-color: rgba(146, 161, 130, 0.349);
+    background-color: rgba(238, 243, 232, 0.349);
     backdrop-filter: blur(6px);
     position: fixed;
     width: 100%;
@@ -58,7 +58,7 @@ main {
     margin-top: 97px;
     margin-bottom: 50px;
     padding: 20px;
-    background: url(img/image-18.jpg) center/cover no-repeat fixed;
+    background: url(../img/image-18.jpg) center/cover no-repeat fixed;
 }
 
 .gradient-overlay {

@@ -40,8 +40,6 @@ function inverterLocal() {
     var partida = document.getElementById("partida");
     var chegada = document.getElementById("chegada");
 
-    console.log("chegada " + chegada.value, "partida " + partida.value);
-
     var temp = partida.value;
     partida.value = chegada.value;
     chegada.value = temp;

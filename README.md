@@ -1,10 +1,10 @@
-# Venda de Passagens de Ônibus Online
+# Venda de Passagens de Ônibus Online 🚌
 Bem-vindo ao repositório do projeto de um site para venda de passagens de ônibus online. Este projeto visa proporcionar uma experiência fácil e conveniente para usuários que desejam adquirir passagens de ônibus de forma rápida e segura. Abaixo estão algumas informações importantes para entender e contribuir para o projeto.
 
-## Visão Geral
+## Visão Geral 🌐
 O objetivo principal deste projeto é desenvolver um site intuitivo e eficiente para a venda de passagens de ônibus. Os usuários poderão buscar rotas, visualizar horários, escolher assentos e concluir o processo de compra de forma simples e direta.
 
-## Funcionalidades Principais
+## Funcionalidades Principais 🚀
 1. **Pesquisa de Rotas:** Permitir que os usuários pesquisem por rotas disponíveis, informando origem, destino, data e horário desejados.
 
 2. **Visualização de Horários:** Apresentar de maneira clara os horários disponíveis para cada rota.
@@ -15,14 +15,14 @@ O objetivo principal deste projeto é desenvolver um site intuitivo e eficiente 
 
 5. **Histórico de Compras:** Oferecer aos usuários a capacidade de visualizar seu histórico de compras e informações das passagens adquiridas.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas 💻
 **Front-end:** HTML, CSS, JavaScript.
 
 **Back-end:** PHP.
 
 **Banco de Dados:** PostgreSQL.
 
-## Como Contribuir
+## Como Contribuir 🤝
 1. Faça um fork do repositório.
 
 2. Clone o repositório forkado para a sua máquina local.
@@ -43,5 +43,5 @@ O objetivo principal deste projeto é desenvolver um site intuitivo e eficiente 
 
 7. Crie um pull request para enviar suas alterações.
 
-## Autores
+## Autores 👥
 Kemuell Klinger (@kemuellKlinger), Naum Diniz (@NaumDiniz) e João Victor (@joaosaiko)

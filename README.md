@@ -44,4 +44,4 @@ O objetivo principal deste projeto é desenvolver um site intuitivo e eficiente 
 7. Crie um pull request para enviar suas alterações.
 
 ## Autores
-Kemuell Klinger (@kemuell411), Naum Diniz (@NaumDiniz) e João Victor (@joaosaiko)
+Kemuell Klinger (@kemuellKlinger), Naum Diniz (@NaumDiniz) e João Victor (@joaosaiko)

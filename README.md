@@ -5,22 +5,22 @@ Bem-vindo ao repositório do projeto de um site para venda de passagens de ônib
 O objetivo principal deste projeto é desenvolver um site intuitivo e eficiente para a venda de passagens de ônibus. Os usuários poderão buscar rotas, visualizar horários, escolher assentos e concluir o processo de compra de forma simples e direta.
 
 ## Funcionalidades Principais
-1. Pesquisa de Rotas: Permitir que os usuários pesquisem por rotas disponíveis, informando origem, destino, data e horário desejados.
+1. **Pesquisa de Rotas:** Permitir que os usuários pesquisem por rotas disponíveis, informando origem, destino, data e horário desejados.
 
-2. Visualização de Horários: Apresentar de maneira clara os horários disponíveis para cada rota.
+2. **Visualização de Horários:** Apresentar de maneira clara os horários disponíveis para cada rota.
 
-3. Seleção de Assentos: Possibilitar aos usuários escolherem os assentos desejados durante o processo de compra.
+3. **Seleção de Assentos:** Possibilitar aos usuários escolherem os assentos desejados durante o processo de compra.
 
-4. Pagamento Seguro: Integrar um sistema de pagamento seguro para garantir transações confiáveis.
+4. **Pagamento Seguro:** Integrar um sistema de pagamento seguro para garantir transações confiáveis.
 
-5. Histórico de Compras: Oferecer aos usuários a capacidade de visualizar seu histórico de compras e informações das passagens adquiridas.
+5. **Histórico de Compras:** Oferecer aos usuários a capacidade de visualizar seu histórico de compras e informações das passagens adquiridas.
 
 ## Tecnologias Utilizadas
-Front-end: HTML, CSS, JavaScript.
+**Front-end:** HTML, CSS, JavaScript.
 
-Back-end: PHP.
+**Back-end:** PHP.
 
-Banco de Dados: PostgreSQL.
+**Banco de Dados:** PostgreSQL.
 
 ## Como Contribuir
 1. Faça um fork do repositório.
@@ -36,10 +36,10 @@ Banco de Dados: PostgreSQL.
 5. Commit e faça push para o seu repositório forkado.
 
     git add .
-    git commit -m "Descrição das alterações"
+    git commit -m "Descrição das alterações" 
     git push origin nome-da-sua-branch
 
 6. Crie um pull request para enviar suas alterações.
 
 ## Autores
-Kemuell (@kemuell411), Naum Diniz (@NaumDiniz) e João Victor (@joaosaiko)
+Kemuell Klinger (@kemuell411), Naum Diniz (@NaumDiniz) e João Victor (@joaosaiko)
